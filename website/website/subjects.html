@@ -1,0 +1,143 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jqueryui.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+img.logo{
+  height:80px;
+  width:80px;
+  position: absolute;
+  left: 0px;
+
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+
+table, th, td {
+   border: 2px solid #3d515c;
+  border-radius: 10px;
+  text-align: center;
+  background: #DCDCDC;
+}
+
+h1{
+  text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.box{
+  position: absolute;
+  left: 500px;
+  width: 350px;
+  height: 200px;
+  background-color: #DCDCDC;
+  border-radius: 25px;
+  padding: 0 50px;
+  border: 2px solid #800000;
+}
+button.r {
+  background-color: #1560BD;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:180px;
+  border-radius: 30px;
+}
+
+</style>
+</head>
+<body  style="background-color:#CCCCCC;">
+  <div class="header">
+  <img class="logo" src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/61050eb62d448_json_image_1627721398.webp" alt="logo">
+    <h1>BCS Student Portal</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="/website/students.html"> Home</a>
+    <a href="/website/subjects.html">Subject Enrollment</a>
+    <a href="#">Homework due</a>
+    <a href="#">Timetable</a>
+      <a href="#">Grades</a>
+      <a href="/website/GPA1.html">GPA Calculator</a>
+  </div>
+  <br><br>
+  <table style="width:80%" class="center">
+    <tr>
+      <th colspan="3">Sujects On Offer</th>
+    </tr>
+    <tr>
+      <td><b>Subject Code</b></td>
+      <td><b>Name</b></td>
+    </tr>
+    <tr>
+      <td>ART239</td>
+      <td>Art</td>
+    </tr>
+
+     <tr>
+      <td>MUS362</td>
+      <td>Music</td>
+    </tr>
+     <tr>
+      <td>MAR101</td>
+      <td>Marketing</td>
+    </tr>
+     <tr>
+      <td>ROB333</td>
+      <td>Robotics</td>
+    </tr>
+     <tr>
+      <td>EDI139</td>
+      <td>Editing</td>
+    </tr>
+  </table>
+<br><br><br>
+<div class="box">
+  <br><br><br>
+Enter the subject code:
+<input type="text" placeholder="enter code" id="txtInputData">
+<button onclick="displayName()">Add</button>
+<p id="show_name"></p>
+<div>
+  <script>
+       function displayName() {
+          var originalName = document.getElementById("txtInputData").value;
+          document.getElementById("show_name").innerHTML = "Succsfully added " + originalName;
+       }
+    </script>
+ </body>
+</html>

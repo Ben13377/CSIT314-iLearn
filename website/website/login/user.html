@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .btn-group {
+      display: inline-block;
+    }
+
+    .button {
+      border: 0px solid;
+      color: black;
+      padding: 70px 70px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    .button:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .button:hover {
+      background-color: #bebebe;
+      opacity: 1;
+      transform: scale(1.1);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="btn-group">
+      <span class="button">
+        <img src="staff.png">
+        Staff
+      </span>
+      <a href="studentlogin.html" class="button">
+        <img src="student.png">
+        Students
+      </a>
+      <a href="parentslogin.html" class="button">
+        <img src="parents.png">
+        Parents
+      </a>
+    </div>
+  </div>
+</body>
+</html>

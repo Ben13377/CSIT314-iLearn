@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment Submission</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Assignment Submission</h1>
+    <p class="info">Maximum file size: 200MB</p>
+    <form id="submissionForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="text" id="title" placeholder="Assignment Title" required>
+      <input type="file" id="file" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="assignmentSubmission.js"></script>
+</body>
+</html>
